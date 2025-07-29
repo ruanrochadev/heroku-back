@@ -1,0 +1,776 @@
+{
+	"info": {
+		"_postman_id": "22af07d5-4b20-403d-8930-aafdd6ec7ed1",
+		"name": "2025_07_18_132322_laravel_collection.json",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45671018"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "api/user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "8|sDCJQLeLFf058TK1xGXO1RBmgjmi7LsTnELeLoLZ199fe7fe",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/user",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/user",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "teste",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "test21e@teste.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/users",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/users{user}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/users/:user",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"users",
+								":user"
+							],
+							"variable": [
+								{
+									"key": "user",
+									"value": "8"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/users/{user}",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/users/:user",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"users",
+								":user"
+							],
+							"variable": [
+								{
+									"key": "user",
+									"value": "8"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/users/{user}",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/users/:user",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"users",
+								":user"
+							],
+							"variable": [
+								{
+									"key": "user",
+									"value": "8"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/users/{user}",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/users/:user",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"users",
+								":user"
+							],
+							"variable": [
+								{
+									"key": "user",
+									"value": "7"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "transportador",
+			"item": [
+				{
+					"name": "api/transportador",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/transportador",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"transportador"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/transportador",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nome_motorista",
+									"value": "testando",
+									"type": "text"
+								},
+								{
+									"key": "placa_veiculo",
+									"value": "uyt7584",
+									"type": "text"
+								},
+								{
+									"key": "capacidade_veiculo",
+									"value": "20",
+									"type": "text"
+								},
+								{
+									"key": "telefone",
+									"value": "59874698514",
+									"type": "text"
+								},
+								{
+									"key": "cnpj",
+									"value": "78946132789452",
+									"type": "text"
+								},
+								{
+									"key": "disponivel",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/transportador",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"transportador"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/transportador/{transportador}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/transportador/:transportador",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"transportador",
+								":transportador"
+							],
+							"variable": [
+								{
+									"key": "transportador",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/transportador/{transportador}",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/transportador/:transportador",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"transportador",
+								":transportador"
+							],
+							"variable": [
+								{
+									"key": "transportador",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/transportador/{transportador}",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/transportador/:transportador",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"transportador",
+								":transportador"
+							],
+							"variable": [
+								{
+									"key": "transportador",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/transportador/{transportador}",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/transportador/:transportador",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"transportador",
+								":transportador"
+							],
+							"variable": [
+								{
+									"key": "transportador",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "estabelecimentos",
+			"item": [
+				{
+					"name": "api/estabelecimentos",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/estabelecimentos",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"estabelecimentos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/estabelecimentos",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nome",
+									"value": "tester",
+									"type": "text"
+								},
+								{
+									"key": "tipo",
+									"value": "lancheria",
+									"type": "text"
+								},
+								{
+									"key": "endereco",
+									"value": "laranjal",
+									"type": "text"
+								},
+								{
+									"key": "qtd_oleo",
+									"value": "50",
+									"type": "text"
+								},
+								{
+									"key": "telefone",
+									"value": "8752648674",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/estabelecimentos",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"estabelecimentos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/estabelecimentos/{estabelecimento}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/estabelecimentos/:estabelecimento",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"estabelecimentos",
+								":estabelecimento"
+							],
+							"variable": [
+								{
+									"key": "estabelecimento",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/estabelecimentos/{estabelecimento}",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/estabelecimentos/:estabelecimento",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"estabelecimentos",
+								":estabelecimento"
+							],
+							"variable": [
+								{
+									"key": "estabelecimento",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/estabelecimentos/{estabelecimento}",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/estabelecimentos/:estabelecimento",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"estabelecimentos",
+								":estabelecimento"
+							],
+							"variable": [
+								{
+									"key": "estabelecimento",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/estabelecimentos/{estabelecimento}",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/estabelecimentos/:estabelecimento",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"estabelecimentos",
+								":estabelecimento"
+							],
+							"variable": [
+								{
+									"key": "estabelecimento",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "New Request",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const {token} = pm.response.json();\r",
+									"token && pm.collectionVariables.set(\"TOKEN\", token);"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "teste@teste.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/login",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": ""
+		},
+		{
+			"key": "TOKEN",
+			"value": ""
+		}
+	]
+}
