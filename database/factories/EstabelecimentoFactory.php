@@ -22,7 +22,7 @@ class EstabelecimentoFactory extends Factory
             'nome' => $this->faker->company(),
             'endereco' => $this->faker->address(),
             'telefone' => $this->faker->phoneNumber(),
-            "cnpj" => fake()->cnpj(),
+            "cnpj" => $this->faker->numerify('##.###.###/####-##'),
         ];
     }
 }
